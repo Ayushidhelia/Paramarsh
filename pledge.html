@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramarsh - Pledge</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="mb-0">Paramarsh</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="pledge.html">Pledge</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="py-5" style="background-image: url('background.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <section class="pledge bg-white p-5 rounded shadow-sm">
+                <h2>Take the Pledge</h2>
+                <p>Join us in our mission to protect the environment by taking the Paramarsh pledge. Commit to making sustainable choices and reducing your ecological footprint.</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pledge" class="form-label">I pledge to:</label>
+                        <textarea id="pledge" name="pledge" rows="5" class="form-control" required placeholder="Describe your commitment..."></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contact" class="form-label">Preferred Contact Method:</label>
+                        <select id="contact" name="contact" class="form-select" required>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number (if selected):</label>
+                        <input type="tel" id="phone" name="phone" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Pledge</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Paramarsh. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
